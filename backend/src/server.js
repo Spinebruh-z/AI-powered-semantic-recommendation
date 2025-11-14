@@ -18,6 +18,9 @@ dotenv.config({ path: path.join(__dirname, '../.env') });
 const app = express();
 const PORT = process.env.PORT || 5000;
 
+// Trust proxy - required for Render and other cloud platforms
+app.set('trust proxy', 1);
+
 // Initialize database
 const db = initDatabase();
 
