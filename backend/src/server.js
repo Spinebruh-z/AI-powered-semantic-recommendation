@@ -33,6 +33,7 @@ app.use(helmet({
 app.use(cors({
   origin: process.env.NODE_ENV === 'production' 
     ? [
+        'https://frontend-iuo5yzsv8-satamsarthak03-4794s-projects.vercel.app',
         'https://ai-recommendation-system-lqj9kux29.vercel.app',
         'https://ai-recommendation-system-gj2gnpgke.vercel.app',
         process.env.FRONTEND_URL
