@@ -8,9 +8,9 @@ package-lock.json
 .env.*.local
 
 # Database
-*.db
-*.sqlite
-*.sqlite3
+# *.db (temporarily enabled for deployment)
+# *.sqlite
+# *.sqlite3
 
 # Logs
 logs/
