@@ -29,7 +29,7 @@ app.use(helmet({
 // CORS configuration
 app.use(cors({
   origin: process.env.NODE_ENV === 'production' 
-    ? process.env.FRONTEND_URL 
+    ? ['https://ai-recommendation-system-lqj9kux29.vercel.app', process.env.FRONTEND_URL]
     : ['http://localhost:3000', 'http://localhost:5173'], // Support both ports
   credentials: true
 }));
